@@ -1,6 +1,6 @@
 //
 //  TransactionModel.swift
-//  ExpenceTracker
+//  ExpenseTracker
 //
 //  Created by Андрей Русин on 06.10.2022.
 //
@@ -35,6 +35,10 @@ struct Transaction: Identifiable, Codable, Hashable {
     
     var signedAmount: Double {
         return type == TransactionType.credit.rawValue ? amount : -amount
+    }
+    
+    var month: String {
+        dateParsed.formatted(.dateTime.year().month(.wide))
     }
 }
 enum TransactionType: String {
@@ -98,5 +102,6 @@ extension Category {
         .paycheque,
         .software,
         .creditCardPayment]
+    
     static let all: [Category] = categories + subcategories
 }

@@ -1,6 +1,6 @@
 //
 //  RecentTransactionList.swift
-//  ExpenceTracker
+//  ExpenseTracker
 //
 //  Created by Андрей Русин on 09.10.2022.
 //
@@ -18,7 +18,7 @@ struct RecentTransactionList: View {
                 Spacer()
                 //MARK: - Header link
                 NavigationLink {
-                    
+                    TransactionList()
                 } label: {
                     HStack(spacing: 4) {
                         Text("See all")

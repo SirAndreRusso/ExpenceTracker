@@ -1,6 +1,6 @@
 //
 //  Color.swift
-//  ExpenceTracker
+//  ExpenseTracker
 //
 //  Created by Андрей Русин on 06.10.2022.
 //
